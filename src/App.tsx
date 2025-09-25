@@ -5,12 +5,12 @@ import { Container } from './styles'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './styles'
-import Colors from './themes/colors'
+import theme from './themes/theme'
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={Colors}>
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Header />
         <Hero />

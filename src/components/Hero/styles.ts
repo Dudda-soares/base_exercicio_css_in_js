@@ -21,7 +21,7 @@ export const FormHero = styled.form`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${(props) => props.theme.corPrincipal};
+    background-color: ${({ theme }) => theme.colors.corPrincipal};
     content: '';
     opacity: 0.7;
   }

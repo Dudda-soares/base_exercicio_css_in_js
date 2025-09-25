@@ -8,7 +8,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: Lato, sans-serif;
     list-style: none;
+
   }
+  :root {
+    --cor-principal: ${({ theme }) => theme.colors.corPrincipal};
+    --cor-secundaria: ${({ theme }) => theme.colors.corSecundaria};
+  }
+
 
   body{
     padding-bottom: 120px;

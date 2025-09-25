@@ -16,23 +16,23 @@ interface InputProps {
 export const Formulario = styled.form<FormularioProps>`
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: ${(props) => props.theme.corSecundaria};
+  background-color: ${({ theme }) => theme.colors.corSecundaria};
   padding: 32px;
   border-radius: 12px;
   margin-top: 40px;
 `
 
 export const BtnPesquisar = styled.button<FormularioProps>`
-  background-color: ${(props) => props.theme.corPrincipal};
-  border: 1px solid ${(props) => props.theme.corPrincipal};
+  background-color: ${({ theme }) => theme.colors.corPrincipal};
+  border: 1px solid ${({ theme }) => theme.colors.corPrincipal};
   height: 40px;
   padding: 0 16px;
   font-size: 18px;
-  color: ${(props) => props.theme.corSecundaria};
+  color: ${({ theme }) => theme.colors.corSecundaria};
   margin-left: 8px;
   cursor: pointer;
 `
 export const Input = styled.input<InputProps>`
   padding: 0 16px;
-  outline-color: ${(props) => props.theme.corPrincipal};
+  outline-color: ${({ theme }) => theme.colors.corPrincipal};
 `
